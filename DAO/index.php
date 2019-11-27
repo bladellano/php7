@@ -3,12 +3,12 @@
 require_once("config.php");
 
 $usuario = new Usuario();
-$usuario->login("user","123456");
-echo $usuario;
+/*$usuario->login("user","123456");
+echo $usuario;*/
 
 //Carrega uma lista de usuários buscando pelo login
-/*$search = Usuario::search("user");
-echo json_encode($search);*/
+$search = Usuario::search("user");
+echo json_encode($search);
 
 //Carrega uma lista de usuário
 /*$lista = Usuario::getList();
